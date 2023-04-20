@@ -35,7 +35,7 @@ function Login() {
         await updateProfile(user, {
           displayName: values.name,
         });
-        navigate("/options");
+        navigate("/awareness");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
@@ -61,6 +61,7 @@ function Login() {
             setValues((prev) => ({ ...prev, pass: e.target.value }))
           }
           placeholder="Enter password"
+          type="password"
         />
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>

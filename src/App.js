@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Awareness from "./components/awareness";
 // import { useEffect } from "react";
 // import { auth } from "./firebase";
 // import { useState } from "react";
@@ -24,7 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/options" element={<Signup />} />
+          <Route path="/awareness" element={<Awareness />} />
         </Routes>
       </Router>
     </div>
