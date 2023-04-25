@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles/IptCtrl.module.css";
+import styles from "./IptCtrl.module.css";
 
 function InputControl(props) {
   return (

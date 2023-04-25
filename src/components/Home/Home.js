@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./styles/awareness.module.css";
-function Awareness(props) {
+import styles from "./Home.module.css";
+function Home(props) {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
         <h1>
-          <Link to="/login">Food Based diet recommendation</Link>
+          <Link to="/login">Login</Link>
+          <hr />
+          <Link to="/signup">Signup</Link>
         </h1>
       </div>
       <br />
       <div className={styles.innerBox}>
+        <img src="./awareness.png" alt="Awareness" />
         <h1>
-          <Link to="/login">Yoga & Lifestyle Suggestions</Link>
+          <br />
+          <Link to="/login">Awareness Tutorials</Link>
         </h1>
       </div>
       <br /> <br /> <br />
@@ -22,4 +26,4 @@ function Awareness(props) {
     </div>
   );
 }
-export default Awareness;
+export default Home;

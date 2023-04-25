@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./styles/Login.module.css";
-import InputControl from "./InputCtrl";
+import styles from "./Login.module.css";
+import InputControl from "../Inpt_Ctrl/InputCtrl";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../../firebase";
 
 function Signup() {
   const [values, setValues] = useState({
